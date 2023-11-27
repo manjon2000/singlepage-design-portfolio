@@ -1,0 +1,41 @@
+@import '../../../styles/colors';
+
+.ui-button {
+    width: 176px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: $black;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    color: $light-cream;
+    cursor: pointer;
+    transition: background cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $galactic-blue;
+        transition: background cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
+    }
+
+    @media (min-width: 768px) {
+        width: 228px;
+        height: 56px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &--secondary {
+        background-color: $light-red;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $summer-yellow;
+        }
+    }
+}

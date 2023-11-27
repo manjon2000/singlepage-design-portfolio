@@ -1,0 +1,21 @@
+@import '../../../../styles/fonts';
+@import '../../../../styles/colors';
+
+.ui-my-work {
+    max-width: 1111px;
+    height: max-content;
+    margin: 3rem auto;
+
+    &__title {
+        line-height: normal;
+        text-transform: uppercase;
+        font-size: 24px;
+        text-align: center;
+        color: $black;
+        font-weight: 700;
+
+        @media (min-width: 768px) {
+            font-size: 32px;
+        }   
+    }
+}

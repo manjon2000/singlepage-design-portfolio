@@ -1,0 +1,22 @@
+<div class="ui-slider">
+    <div #sliderWrapper class="ui-slider__wrapper">
+        <div class="ui-slider__item" *ngFor="let item of sliderConfiguration.sliderData ">
+            <img class="ui-slider__item-image" 
+                [src]="item.sliderImage" 
+                [alt]="item.sliderAlt"
+            />
+        </div>
+    </div>
+    <div class="ui-slider__control">
+        <div class="ui-slider__control-prev" (click)="sliderPrev()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                <path d="M7.99992 0L0 7.99998L7.99992 16L9.68661 14.3133L4.56596 9.19271H14.8072V6.8072H4.56596L9.68661 1.6866L7.99992 0Z" fill="white"/>
+              </svg>
+        </div>
+        <div class="ui-slider__control-next" (click)="sliderNext()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                <path d="M6.80733 16L14.8073 8.00002L6.80733 0L5.12064 1.68669L10.2413 6.80729L4.00543e-05 6.80729L4.00543e-05 9.1928L10.2413 9.1928L5.12064 14.3134L6.80733 16Z" fill="white"/>
+              </svg>
+        </div>
+    </div>
+</div>
